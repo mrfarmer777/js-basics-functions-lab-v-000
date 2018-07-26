@@ -21,6 +21,9 @@ function calculatesFarePrice(str,dest){
     case dist<=400:
       fare=0;
       break;
+    case dist>=2000:
+      fare=25;
+      break;
     default:
       fare=0.02*(dist-400);
       break;
