@@ -14,6 +14,10 @@ function distanceTravelledInFeet(str,pos){
 function calculatesFarePrice(str,dest){
   const distFt=distanceTravelledInFeet(str,dest);
   let fare;
+  switch(distFt){
+    case (fare>2500):
+      
+  }
   if(distFt<2500){
     if (distFt<2000){
       fare=0.02*(distFt-400);
