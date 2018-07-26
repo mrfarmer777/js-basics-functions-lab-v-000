@@ -18,12 +18,12 @@ function calculatesFarePrice(str,dest){
     case dist>2500:
       fare="cannot travel that far";
       break;
-      case dist<400:
-        fare=0;
-        break;
-      default:
-        fare=0.02*(dist-400);
-        break;
+    case dist<=400:
+      fare=0;
+      break;
+    default:
+      fare=0.02*(dist-400);
+      break;
   }
   return fare;
 }
