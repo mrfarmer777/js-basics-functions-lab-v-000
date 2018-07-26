@@ -2,3 +2,7 @@
 function distanceFromHqInBlocks(pos){
   return Math.abs(42-pos);
 }
+
+function distanceFromHqInFeet(pos){
+  return distance
+}
