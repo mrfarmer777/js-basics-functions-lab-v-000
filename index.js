@@ -25,14 +25,5 @@ function calculatesFarePrice(str,dest){
         fare=0.02*(dist-400);
         break;
   }
-  if(distFt<2500){
-    if (distFt<2000){
-      fare=0.02*(distFt-400);
-    } else {
-      fare=2000*0.02;
-    }
-  } else {
-    fare="cannot travel that far";
-  }
   return fare;
 }
