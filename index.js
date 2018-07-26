@@ -15,10 +15,10 @@ function calculatesFarePrice(str,dest){
   const dist=distanceTravelledInFeet(str,dest);
   let fare;
   switch(dist){
-    case (dist>2500):
+    case dist>2500:
       fare="cannot travel that far";
       break;
-      case (dist<400):
+      case dist<400:
         fare=0;
         break;
       default:
